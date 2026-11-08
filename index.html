@@ -55,14 +55,53 @@
 
       <!-- PHOTO GUIDE: Put your pictures in the images folder and name them photo-1.jpg to photo-6.jpg.
            You can also change each src below to the exact filename of your own picture. -->
-      <div class="photo-grid">
-        <figure class="photo-card"><img src="images/photo-1.jpg" alt="Our memory 1" loading="lazy"><figcaption>Our memory 01</figcaption><div class="photo-placeholder">📷<span>Add photo-1.jpg</span></div></figure>
-        <figure class="photo-card"><img src="images/photo-2.jpg" alt="Our memory 2" loading="lazy"><figcaption>Our memory 02</figcaption><div class="photo-placeholder">📷<span>Add photo-2.jpg</span></div></figure>
-        <figure class="photo-card"><img src="images/photo-3.jpg" alt="Our memory 3" loading="lazy"><figcaption>Our memory 03</figcaption><div class="photo-placeholder">📷<span>Add photo-3.jpg</span></div></figure>
-        <figure class="photo-card"><img src="images/photo-4.jpg" alt="Our memory 4" loading="lazy"><figcaption>Our memory 04</figcaption><div class="photo-placeholder">📷<span>Add photo-4.jpg</span></div></figure>
-        <figure class="photo-card"><img src="images/photo-5.jpg" alt="Our memory 5" loading="lazy"><figcaption>Our memory 05</figcaption><div class="photo-placeholder">📷<span>Add photo-5.jpg</span></div></figure>
-        <figure class="photo-card"><img src="images/photo-6.jpg" alt="Our memory 6" loading="lazy"><figcaption>Our memory 06</figcaption><div class="photo-placeholder">📷<span>Add photo-6.jpg</span></div></figure>
-      </div>
+      
+<div class="photo-grid">
+
+  <figure class="photo-card">
+    <img src="images/photo-1.jpg" alt="Our memory 1"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-1.jpg</span></div>
+    <figcaption>Our memory 01</figcaption>
+  </figure>
+
+  <figure class="photo-card">
+    <img src="images/photo-2.jpg" alt="Our memory 2"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-2.jpg</span></div>
+    <figcaption>Our memory 02</figcaption>
+  </figure>
+
+  <figure class="photo-card">
+    <img src="images/photo-3.jpg" alt="Our memory 3"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-3.jpg</span></div>
+    <figcaption>Our memory 03</figcaption>
+  </figure>
+
+  <figure class="photo-card">
+    <img src="images/photo-4.jpg" alt="Our memory 4"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-4.jpg</span></div>
+    <figcaption>Our memory 04</figcaption>
+  </figure>
+
+  <figure class="photo-card">
+    <img src="images/photo-5.jpg" alt="Our memory 5"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-5.jpg</span></div>
+    <figcaption>Our memory 05</figcaption>
+  </figure>
+
+  <figure class="photo-card">
+    <img src="images/photo-6.jpg" alt="Our memory 6"
+         onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+    <div class="photo-placeholder" hidden>📷<span>Add photo-6.jpg</span></div>
+    <figcaption>Our memory 06</figcaption>
+  </figure>
+
+</div>
+
       <p class="photo-tip">Your pictures stay yours — add them to the <code>images</code> folder before publishing.</p>
     </section>
 
