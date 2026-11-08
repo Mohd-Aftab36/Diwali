@@ -1,0 +1,1 @@
+Put your photos in this folder and name them photo-1.jpg through photo-6.jpg. See README.md for steps.
