@@ -26,8 +26,32 @@ h1 span,.closing h2 span { color:#ec783d; }
 .button { display:inline-flex; gap:12px; align-items:center; margin-top:22px; padding:15px 23px; border-radius:50px; background:#e97848; color:white; text-decoration:none; font-weight:700; box-shadow:0 10px 24px #d77a4a42; transition:transform .2s,box-shadow .2s; }
 .button:hover { transform:translateY(-3px); box-shadow:0 14px 28px #d77a4a55; }
 .button span { font-size:18px; }
-.hero-photo { position:relative; width:100%; max-width:490px; height:clamp(300px,42vw,490px); justify-self:end; margin:0; padding:10px; border-radius:28px; background:#fff8e9b8; box-shadow:0 22px 60px #9b58422b; transform:rotate(2deg); }
-.hero-photo img { width:100%; height:100%; display:block; object-fit:cover; border-radius:20px; }
+/* Complete banner photo without cropping */
+
+.hero-photo {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 2048 / 715;
+  height: auto;
+  justify-self: end;
+  margin: 0;
+  padding: 6px;
+  border-radius: 20px;
+  background: #fff8e9;
+  box-shadow: 0 18px 45px #9b58422b;
+  transform: none;
+  overflow: hidden;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 14px;
+}
 .hero-photo figcaption,.note-photo figcaption { position:absolute; left:22px; right:22px; bottom:20px; padding:12px 14px; color:white; font-size:13px; border-radius:12px; background:linear-gradient(transparent,#42252cba); }
 .decor { position:absolute; color:#fff9d8; opacity:.65; pointer-events:none; }
 .decor-one { top:14%; right:8%; font-size:70px; }
@@ -73,7 +97,21 @@ footer { text-align:center; padding:20px; font-size:12px; color:#9a7771; backgro
   .hero { min-height:0; grid-template-columns:1fr; gap:34px; padding:115px 24px 75px; text-align:center; }
   .hero-content { margin:auto; }
   .intro { margin:0 auto; }
-  .hero-photo { justify-self:center; width:min(100%,430px); height:clamp(280px,75vw,430px); transform:none; }
+  .hero-photo {
+  justify-self: center;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  aspect-ratio: 2048 / 715;
+  transform: none;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
   .decor-one { top:10%; right:7%; }.decor-two { bottom:5%; left:6%; }
   .scroll-hint { bottom:18px; }
   .note-layout { grid-template-columns:1fr; max-width:560px; }
